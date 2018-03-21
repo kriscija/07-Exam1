@@ -2,8 +2,8 @@
 Exam 1, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Joe Krisciunas.  March 2018.
+"""  # Done
 
 import rosegraphics as rg
 
@@ -64,6 +64,19 @@ def run_test_problem3():
 #
 ###############################################################################
 def problem3(rect, n, window):
+    rect.attach_to(window)
+    #window.render()
+    recth = rect.get_height()
+    rectlrc = rect.get_lower_right_corner()
+
+    for k in range(n):
+        x = rg.Point(rectlrc.x+k*((recth/4)**1/2), rectlrc.y+k*((recth/4)**1/2))
+        circle = rg.Circle(x, recth/2)
+        circle.attach_to(window)
+    window.render
+
+
+
     """
     See    problem3_pictures.pdf     for pictures that may help you
     better understand the following specification:
