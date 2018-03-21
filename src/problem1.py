@@ -231,17 +231,17 @@ def run_test_problem1b():
     print('test 1 expected:', expected1)
     print('   actual value:', answer1)
     #test 2
-    expected2 = 50
+    expected2 = 64
     answer2 = problem1b(4)
     print('test 2 expected:', expected2)
     print('   actual value:', answer2)
     # test 3
-    expected3 = 152
+    expected3 = 143
     answer3 = problem1b(5)
     print('test 3 expected:', expected3)
     print('   actual value:', answer3)
     #test 4
-    expected4 = 317
+    expected4 = 276
     answer4 = problem1b(6)
     print('test 4 expected:', expected4)
     print('   actual value:', answer4)
