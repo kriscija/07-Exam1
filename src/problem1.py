@@ -255,7 +255,7 @@ def run_test_problem1b():
 ###############################################################################
 def problem1b(r):
     count = 0
-    count = count + problem1a(r,r**2,r+1)
+    count = count + problem1a(r, r**2, r+1)
 
     return count
 
@@ -272,7 +272,7 @@ def problem1b(r):
            and the sum of the above numbers is 682
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done
     #          See the IMPORTANT NOTE just before the DEF above.
     # -------------------------------------------------------------------------
 

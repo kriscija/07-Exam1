@@ -84,7 +84,7 @@ def run_test_problem2():
 def problem2(line1, line2, thickness, win):
     line1.attach_to(win)
     line2.attach_to(win)
-    #win.render this was a test that worked
+    #win.render this was for tests ecause I did it sequentially
     lin1m = line1.get_midpoint()
     lin2m = line2.get_midpoint()
     rect1 = rg.Rectangle(lin1m, lin2m)
