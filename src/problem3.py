@@ -65,12 +65,12 @@ def run_test_problem3():
 ###############################################################################
 def problem3(rect, n, window):
     rect.attach_to(window)
-    #window.render()
+    #window.render() this was for a test
     recth = rect.get_height()
     rectlrc = rect.get_lower_right_corner()
 
     for k in range(n):
-        x = rg.Point(rectlrc.x+k*((1.41/2*recth)**1/2), rectlrc.y+k*((1.41/2*recth)**1/2))
+        x = rg.Point(rectlrc.x+k*((recth/(2**.5))), rectlrc.y+k*((recth/(2**.5))))
         circle = rg.Circle(x, recth/2)
         circle.attach_to(window)
     window.render
@@ -106,7 +106,7 @@ def problem3(rect, n, window):
       :type window:  rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function, TESTING each step as you go.
+    # Done
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
