@@ -3,7 +3,7 @@ Exam 1, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done
 
 import rosegraphics as rg
 
@@ -82,6 +82,17 @@ def run_test_problem2():
 #
 ###############################################################################
 def problem2(line1, line2, thickness, win):
+    line1.attach_to(win)
+    line2.attach_to(win)
+    #win.render this was a test that worked
+    lin1m = line1.get_midpoint()
+    lin2m = line2.get_midpoint()
+    rect1 = rg.Rectangle(lin1m, lin2m)
+    rect1.outline_thickness = thickness
+    rect1.outline_color = line1.color
+    rect1.attach_to(win)
+    win.render
+
     """
     See   problem2_pictures.pdf   for pictures that may help you
     better understand the following specification:
