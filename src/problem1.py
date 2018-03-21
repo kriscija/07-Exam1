@@ -2,8 +2,8 @@
 Exam 1, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Joe Krisciunas.  March 2018.
+"""  # Done
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the   product_of_digits   function below.
+# Done
 #           Ask your instructor for help if you do not understand it.
 #
 #   Once you are confident that you understand the doc-string
@@ -166,6 +166,13 @@ def run_test_problem1a():
 #    **  the appropriate function(s) that are defined above.
 ###############################################################################
 def problem1a(a, b, threshold):
+    count = 0
+    for k in range(b-a+1):
+        if product_of_digits(k+a) < threshold:
+            count = count + (k+a)
+    return count
+
+
     """
     What comes in:
       -- Positive integers a and b with a <= b
