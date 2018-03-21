@@ -255,9 +255,8 @@ def run_test_problem1b():
 ###############################################################################
 def problem1b(r):
     count = 0
-    for k in range((r*2)-(r)+1):
-        if product_of_digits(r+k) <= r:
-            count = count+(r+k)
+    count = count + problem1a(r,r**2,r+1)
+
     return count
 
     """

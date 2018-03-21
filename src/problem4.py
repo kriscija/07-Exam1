@@ -144,7 +144,7 @@ def problem4(m):
                                  (i.e., it is prime)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 

@@ -70,7 +70,7 @@ def problem3(rect, n, window):
     rectlrc = rect.get_lower_right_corner()
 
     for k in range(n):
-        x = rg.Point(rectlrc.x+k*((recth/4)**1/2), rectlrc.y+k*((recth/4)**1/2))
+        x = rg.Point(rectlrc.x+k*((1.41/2*recth)**1/2), rectlrc.y+k*((1.41/2*recth)**1/2))
         circle = rg.Circle(x, recth/2)
         circle.attach_to(window)
     window.render
