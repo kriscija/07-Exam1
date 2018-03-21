@@ -203,7 +203,7 @@ def problem1a(a, b, threshold):
               returns 109 + 110 + 111 + 112 + 120 + 121 + 130,  which is 813
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done
     #          Tests have been written for you (above).
     #
     # IMPORTANT NOTE
@@ -216,7 +216,7 @@ def problem1a(a, b, threshold):
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement at least 4 tests of the problem1b function.
+    # Done
     #   Note that you CANNOT use  problem1b(1)  or  problem1b(2)  as tests, per
     #   the specification below that says that the argument must be at least 3.
     # -------------------------------------------------------------------------
@@ -224,6 +224,27 @@ def run_test_problem1b():
     print('--------------------------------------------------')
     print('Testing the   problem1b   function:')
     print('--------------------------------------------------')
+
+    # test 1
+    expected1 = 682
+    answer1 = problem1b(8)
+    print('test 1 expected:', expected1)
+    print('   actual value:', answer1)
+    #test 2
+    expected2 = 50
+    answer2 = problem1b(4)
+    print('test 2 expected:', expected2)
+    print('   actual value:', answer2)
+    # test 3
+    expected3 = 152
+    answer3 = problem1b(5)
+    print('test 3 expected:', expected3)
+    print('   actual value:', answer3)
+    #test 4
+    expected4 = 317
+    answer4 = problem1b(6)
+    print('test 4 expected:', expected4)
+    print('   actual value:', answer4)
 
 
 ###############################################################################
@@ -233,6 +254,12 @@ def run_test_problem1b():
 #    **  possibly including ones you have written.
 ###############################################################################
 def problem1b(r):
+    count = 0
+    for k in range(r*2-r+1):
+        if product_of_digits(r+k) <= r:
+            count = count+(r+k)
+    return count
+
     """
     What comes in:  An integer r that is at least 3.
     What goes out:  Returns the sum of the numbers from r to (r squared),
